@@ -1,0 +1,11 @@
+{ 
+  "servers": {
+    "mcpServers": {
+      "command": "nwmcp",
+      "args": [
+        "--db",
+        "${workspaceFolder}/db/northwind.db",
+      ]
+    }
+  }
+}

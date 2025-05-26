@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "northwindmcp"
+version = "1.0.0"
+
+dependencies = [
+    "fastmcp>=2.0.0",
+    "python-dotenv==1.0.1"
+]
+
+[project.scripts]
+nwmcp = "mcpserver.__main__:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
